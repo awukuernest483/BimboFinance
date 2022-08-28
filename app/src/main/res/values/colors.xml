@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#232324</color>
+
+
+    <color name="bg_color">#f3f5f9</color>
+    <color name="darkgrey">#ffffff</color>
+    <color name="gradientViolet">#232323</color>
+    <color name="gradientLightBlue">#376DF6</color>
+    <color name="white">#ffffff</color>
+
+
+    <color name="selected_dot">#3B8FF0</color>
+    <color name="idle_dot">#662D9CDB</color>
+    <color name="ob_header">#fff</color>
+    <color name="ob_desc">#4A4A4A</color>
+
+
+    <color name="mc_title_bar">#FF16C2DD</color>
+    <color name="mc_state_pressed">#FF1088DD</color>
+    <color name="mc_default_pager">#FFF0F0F0</color>
+    <color name="mc_black_t">#55000000</color>
+    <color name="mc_black_t_pic">#22000000</color>
+    <color name="mc_gallery_bg">#FF16C2DD</color>
+
+
+
+
+    <color name="text_numberpressed">#fff</color>
+    <color name="text_title">#232324</color>
+    <color name="layout_background">#18191A</color>
+    <color name="text_attempts">#bfc0c1</color>
+    <color name="text_fingerprint">#FF87898C</color>
+    <color name="button_notpressed">#3B8FF0</color>
+    <color name="dot_emptyborder">#87898C</color>
+    <color name="transparent">#00000000</color>
+</resources>

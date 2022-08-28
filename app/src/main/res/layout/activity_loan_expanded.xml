@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".WithdrawExpanded">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+    <TextView
+        android:id="@+id/loandetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000" />
+
+
+        <EditText
+            android:id="@+id/loanamount"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/loandetails"
+            android:layout_marginTop="51dp"
+            android:background="@drawable/inputback"
+            android:hint="Enter Loan amount to give"
+            android:inputType="numberDecimal"
+            android:paddingStart="20dp"
+            android:textColor="#000"
+            android:textColorHint="#232324" />
+
+        <Button
+            android:id="@+id/payamountbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loanamount"
+            android:layout_marginTop="20dp"
+            android:text="payamount" />
+
+
+        <Button
+            android:id="@+id/rejectbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/payamountbutton"
+            android:layout_marginTop="20dp"
+            android:text="reject" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/payamountbutton"
+        android:id="@+id/loanpicture"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

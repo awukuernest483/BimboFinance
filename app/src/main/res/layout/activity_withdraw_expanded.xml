@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:padding="20dp"
+    tools:context=".WithdrawExpanded">
+
+
+    <TextView
+        android:id="@+id/Withdrawdetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/amountwithdraw"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/Withdrawdetails"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/inputback"
+        android:hint="Withdrawal amount"
+        android:inputType="numberDecimal"
+        android:paddingStart="20dp"
+        android:textColor="#000"
+        android:textColorHint="#232324" />
+
+
+    <Button
+        android:id="@+id/payamountbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/amountwithdraw"
+        android:layout_marginTop="20dp"
+        android:text="payamount" />
+
+
+
+
+</RelativeLayout>

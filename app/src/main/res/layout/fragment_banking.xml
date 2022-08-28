@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".BankingFragment">
+
+    <TextView
+        android:id="@+id/emailsetter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textColor="#000"
+        android:text="emailsetter"/>
+
+    <TextView
+        android:id="@+id/passwordsetter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textColor="#000"
+        android:text="passwordsetter"/>
+
+    <TextView
+        android:id="@+id/usernameset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textColor="#000"
+        android:text="usernamesetter"/>
+
+
+    <TextView
+        android:id="@+id/totalbalancesetter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textColor="#000"
+        android:text="usernamesetter"/>
+
+    <TextView
+        android:id="@+id/usernamedisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montbold"
+        android:text="Welcome back"
+        android:textColor="#232323"
+        android:textSize="25sp">
+
+    </TextView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/usernamedisplay"
+        android:layout_marginTop="20dp"
+        android:alpha="0.08"
+        android:background="#3B8FF0" />
+
+    <LinearLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernamedisplay"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/depositbutton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:elevation="10dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="500dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/depositbackground" />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_depositicon"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="Deposit"
+                android:textSize="15sp"
+                android:fontFamily="@font/montbold"
+                android:layout_gravity="center_vertical|center_horizontal"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:paddingStart="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/withdrawbutton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="500dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/depositbackgroundd" />
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_withdrawicon"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="Withdraw"
+                android:layout_marginStart="10dp"
+                android:textSize="15sp"
+                android:fontFamily="@font/montbold"
+                android:layout_gravity="center_vertical|center_horizontal"/>
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabs"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="20dp"
+            android:layout_height="wrap_content">
+
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/moneyback"
+                android:contentDescription="moneyback">
+
+            </ImageView>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.5"
+                android:background="#3B8FF0"
+                android:contentDescription="moneyback">
+
+            </ImageView>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montbold"
+                android:text="My Total Balance"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/coinwallet"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="140dp"
+                android:layout_gravity="bottom|end"
+                app:cardCornerRadius="10dp"
+                android:rotation="10"
+                android:alpha="0.85"
+                android:layout_marginEnd="-8dp"
+                android:layout_height="70dp">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:background="@drawable/buttonbackk"
+                android:backgroundTint="#232323"
+                >
+            </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:rotation="-20"
+                android:alpha="0.5"
+                android:layout_marginEnd="10dp"
+                app:cardCornerRadius="10dp"
+                android:layout_gravity="bottom|end">
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="bottom|end"
+                    android:background="@drawable/buttonbackk"
+                    android:backgroundTint="#232323">
+
+
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_gravity="bottom|end"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="20dp">
+
+                <TextView
+                    android:id="@+id/money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ghc"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/montbold"
+                    android:text="----.--"
+                    android:textColor="#3B8FF0"
+                    android:textSize="22sp" />
+
+
+                <TextView
+                    android:id="@+id/ghc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:fontFamily="@font/montsemibold"
+                    android:text="GHS"
+                    android:textColor="#fff"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+        </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/montbold"
+            android:text="My Accounts"
+            android:textColor="#232323"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/montsemibold"
+            android:alpha="0.5"
+            android:layout_marginBottom="20dp"
+            android:text="Tap below options for more details"
+            android:textColor="#232323"
+            android:textSize="15sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/susubutton"
+                    android:layout_width="match_parent"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    android:layout_height="match_parent">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:alpha="0.2"
+                            android:background="@drawable/buttonbackk" />
+
+
+                        <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/buttonbackkk" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montbold"
+                        android:text="Susu"
+                        android:textColor="#3B8FF0"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            app:cardBackgroundColor="@android:color/transparent"
+                            android:layout_gravity="bottom|end"
+                            app:cardElevation="0dp"
+                            android:rotation="10"
+                            app:cardCornerRadius="10dp"
+                            android:layout_marginEnd="-10dp">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="bottom|end"
+                                android:alpha="0.85"
+                                android:background="@drawable/buttonbackk"
+                                android:backgroundTint="#3B8FF0"
+                                />
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            app:cardBackgroundColor="@android:color/transparent"
+                            android:layout_gravity="bottom|end"
+                            app:cardElevation="0dp"
+                            android:rotation="-20"
+                            app:cardCornerRadius="10dp"
+                            android:layout_marginEnd="5dp">
+
+
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom|end"
+                    android:alpha="0.5"
+                    android:background="@drawable/buttonbackk"
+                    android:backgroundTint="#3B8FF0" />
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+                 </FrameLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginEnd="10dp">
+
+                    <TextView
+                        android:id="@+id/moneyy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ghcc"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/montbold"
+                        android:text="----.--"
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/ghcc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:fontFamily="@font/montsemibold"
+                        android:text="GHS"
+                        android:textColor="#fff"
+                        android:textSize="7.5sp" />
+
+                </RelativeLayout>
+
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:paddingStart="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/buttonbackkk"
+                        android:backgroundTint="#FC9EAE" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montbold"
+                        android:text="Loans"
+                        android:textColor="#FC9EAE"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/loansbutton"
+                    android:layout_width="match_parent"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.4"
+                    android:background="@drawable/buttonbackk"
+                    android:backgroundTint="#FDD9DD" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="100dp"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginEnd="-10dp"
+                        android:rotation="10"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        app:cardCornerRadius="10dp"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:alpha="0.85"
+                            android:background="@drawable/buttonbackk"
+                            android:backgroundTint="#FC9EAE"
+                            />
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="100dp"
+                        app:cardElevation="0dp"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginEnd="5dp"
+                        android:rotation="-20"
+                        app:cardCornerRadius="10dp"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="bottom|end"
+                            android:alpha="0.5"
+                            android:background="@drawable/buttonbackk"
+                            android:backgroundTint="#FC9EAE"
+                            />
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginEnd="10dp">
+
+                    <TextView
+                        android:id="@+id/moneyyy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ghccc"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/montbold"
+                        android:text="----.--"
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/ghccc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:fontFamily="@font/montsemibold"
+                        android:text="GHS"
+                        android:textColor="#fff"
+                        android:textSize="7.5sp" />
+
+                </RelativeLayout>
+
+                </FrameLayout>
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearlayout">
+
+        <com.github.alexkolpa.fabtoolbar.FabToolbar
+            android:id="@+id/fab_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearlayout"
+            android:layout_gravity="bottom"
+            app:tb_anim_duration="300"
+            app:tb_button_gravity="end"
+            app:tb_color="#232323"
+            app:tb_container_gravity="center">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/attach"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_baseline_cancel_24" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/applyforloanbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montbold"
+                    android:gravity="center_vertical"
+                    android:text="Apply for a loan"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+
+        </com.github.alexkolpa.fabtoolbar.FabToolbar>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

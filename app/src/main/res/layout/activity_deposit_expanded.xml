@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    tools:context=".DepositExpanded">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:id="@+id/depositdetails"/>
+
+
+    <EditText
+        android:id="@+id/susudepositet"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/depositdetails"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/inputback"
+        android:hint="Susu"
+        android:inputType="numberDecimal"
+        android:paddingStart="20dp"
+        android:textColor="#000"
+        android:textColorHint="#232324" />
+
+
+    <EditText
+        android:id="@+id/loandepositet"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/paysusubutton"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/inputback"
+        android:hint="Loan"
+        android:inputType="numberSigned"
+        android:paddingStart="20dp"
+        android:textColor="#000"
+        android:textColorHint="#232324" />
+
+
+    <Button
+        android:id="@+id/paysusubutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/susudepositet"
+        android:layout_marginTop="20dp"
+        android:text="paysusu" />
+
+
+    <Button
+        android:id="@+id/payloanbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loandepositet"
+        android:layout_marginTop="20dp"
+        android:text="payloan" />
+
+</RelativeLayout>

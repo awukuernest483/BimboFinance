@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ApplyforloanActivity">
+
+
+
+    <com.badoualy.stepperindicator.StepperIndicator
+        android:id="@+id/stepper_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:stpi_circleColor="#3B8FF0"
+        app:stpi_lineColor="#232323"
+        app:stpi_lineStrokeWidth="3dp"
+        app:stpi_indicatorColor="#3B8FF0"
+        android:layout_marginTop="20dp"
+        app:stpi_labels="@array/stepLabels"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ojsusuandloans.CustomViewPager
+            android:id="@+id/pager2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:overScrollMode="never"
+            android:layout_below="@id/stepper_indicator"
+            android:layout_alignParentStart="true"/>
+
+
+
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_create"
+            android:background="@android:color/background_dark"
+            android:text="Create"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            android:layout_weight="0.5"
+            android:layout_gravity="bottom"
+            android:textColor="@android:color/white" />
+
+
+
+    </FrameLayout>
+
+
+
+
+
+
+
+</LinearLayout>

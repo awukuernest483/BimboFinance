@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">Bimbo Finance</string>
+    <string name="new_account">New Account</string>
+    <string name="signup_desc">Start by entering your name and categorie below.</string>
+
+    <string name="login_desc">Enter your login details to access your account</string>
+    <string name="log_in">Log In</string>
+    <string name="message">This App will send you an SMS message for verification and standard rates apply.. Kindly enter your phone Number</string>
+
+    <string name="reset_pass_message">Seems like you forgot your password for OJ Susu and Loans. If this is true, click below to reset your password.</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+
+    <string name="pinlock_title">Enter Pin Code</string>
+    <string name="pinlock_settitle">Set Pin Code</string>
+    <string name="pinlock_firsttry">Wrong Pin Code: First Try</string>
+    <string name="pinlock_secondtry">Wrong Pin Code: Second Try</string>
+    <string name="pinlock_wrongpin">Wrong Pin code</string>
+    <string name="pinlock_secondPin">Enter Pin Code Again</string>
+    <string name="pinlock_tryagain">Pin Codes Are Not The Same</string>
+    <string name="pinlock_fingerprint">Use Fingerprint</string>
+
+
+    <array name="menuOptions">
+        <item>Banking</item>
+        <item>Settings</item>
+        <item>About</item>
+    </array>
+
+
+    <array name="loanprocess">
+        <item>Loan1</item>
+        <item>Loan2</item>
+        <item>Loan3</item>
+        <item>Loan4</item>
+        <item>Loan5</item>
+    </array>
+
+
+    <string-array name="stepLabels">
+        <item>Approval</item>
+        <item>Processed</item>
+        <item>Shipped</item>
+        <item>Delivery</item>
+    </string-array>
+
+
+    <array name="menuIcons">
+        <item>Banking</item>
+        <item>Settings</item>
+        <item>About</item>
+    </array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_app">AppActivity</string>
+
+
+    <string name="ob_header1">Welcome to Bimbo Finance</string>
+    <string name="ob_header2">Low Interest Rates</string>
+    <string name="ob_header3">Make Transactions Anywhere </string>
+
+    <string name="ob_get_started">Get Started</string>
+
+    <string name="ob_desc1">The home of convenient daily Susu. Make your daily Susu and have full access to your fund at anytime.</string>
+    <string name="ob_desc2">Get online loans instantly, with no collateral from GHS50 to GHS20,000 with low interest rate.</string>
+    <string name="ob_desc3">Make transactions without walking into our Office. Get customer support anytime whiles using our app.</string>
+    <string name="text1">Ohemeng James Enterprise(Bimbo finance) is an agent to some financial institution in Ghana, providing credit to eligible borrowers, especially SMEs in Ghana.</string>
+    <string name="text2">Flexible repayment terms are chosen by the applicant, payable in one or multiple installments, depending on eligibility. The loans are intended to assist micro-entrepreneurs with working capital to grow their businesses, and not to service long-term debt obligations.</string>
+    <string name="text3">Maximum Annual Percentage Rate (APR) is 60%. This is based on an interest set to 0.255% per day and decreases with good repayment behavior. Processing fee per loan of GHS 50 to GHS 100 is GHS 5 to GHS 10 depending on the amount, this amount is deducted from the loan before disbursement.</string>
+    <string name="text4">A borrower who receives GHS 1,000 loan for a 180-day term, would be charged an interest rate of 0.255% per day, thus GHS 250 in 180 days, and a processing fee of GHS 50 summing up to a total repayment of GHS 1,300. GHS50 will be deducted from the principal. • In summary: GHS1,000 (borrowed amount), minus GHS50. GHS250 (interest) + GHS50 (processing fee) = GHS1,300 (total payment) • The borrower has the flexibility to make early repayments at any point which may reduce the above-stated interest.</string>
+    <string name="text5">Contact us at \n\n0269237403 for more details. \n\n\nWe respect your privacy and confidentiality of your personal information and data. \n\n\nhttps://www.bimbofinance.app/privacy-policy-statement</string>
+
+
+    <string name="uba">UBA bank</string>
+    <string name="ecobank">Ecobank</string>
+    <string name="fidelity">Fidelity</string>
+    <string name="access">Access Bank</string>
+    <string name="calbank">CalBank</string>
+    <string name="icon">Spinner</string>
+
+
+    <string name="mtn">Mtn mobile money</string>
+    <string name="vodafone">Vodafone Cash</string>
+    <string name="airteltigo">AirtelTigo Money</string>
+    <string name="zeepay">Zeepay</string>
+    <string name="gmoney">G-Money</string>
+    <string name="ghanapay">Ghanapay</string>
+
+
+</resources>
